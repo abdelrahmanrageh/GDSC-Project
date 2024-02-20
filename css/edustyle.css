@@ -1,0 +1,241 @@
+body
+{
+    background-color: #f3f7fc !important;
+}
+root{
+  --main-color: #012c3d;
+  --second-color: #77bcc3;
+}
+*{
+  font-family: poppins , sans-serif !important;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  transition: .3s;
+}
+.top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 35px;
+  height: 35px;
+  color: #012c3d;
+  background-color: #f3f7fc;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  
+  z-index: 1;
+  transition: .5s;
+  opacity: 0;
+}
+.top.show{
+  right: 30px;
+  bottom: 30px;
+  opacity: 1;
+
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+.dropd{
+  display: none !important;
+}
+@media(max-width: 615px){
+  .list nav{
+    display: none;
+  }
+  .dropd{
+    display: flex !important;
+  }
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link{
+  background-color: #012c3d !important;
+}
+.dropdown-menu{
+  background-color: #f3f7fc !important;
+}
+.list img{
+  width: 120px;
+  margin: 20px;
+}  
+.list a{
+  color: #77bcc3;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: .3s;
+}
+.list a:hover{
+  color: var(--main-color);
+}
+
+  .main{
+    height: calc(100vh - 116px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main p{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 56px;
+    text-align: center;
+    width: 100%;
+  }
+  .main p:nth-of-type(2){
+    margin-top: 20px;
+    color: #f8444f;
+    
+  }
+  .problems{
+    background-image: url("media/background1.png");
+  }
+  .prob,
+  .problems{
+    background-size: cover;
+    background-repeat: 1;
+    width: 100%;
+    height: 100vh;
+    margin-top: 150px;
+  }
+  
+  .problems ul,
+  .prob ul{
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #012c3d;
+    margin-left: 5%;
+    line-height: 1.8;
+  }
+
+  .prob_name{
+    display: block;
+    color: #f8444f;
+    font-weight: 600;
+    font-size: 56px;
+    margin-left: 5%;
+  }
+  .paragraph{
+    display: block;
+    margin-top: 70px;
+    line-height: 2.5;
+    font-weight: 400;
+    font-size: 22px;
+    color: #012c3d;
+    width: 50%;
+    margin-left: 5%;
+  }
+  .prob1{
+    background-image: url("media/background2.png");
+  }
+  .prob2{
+    background-image: url("media/background3.png");
+  }
+  .prob3{
+    background-image: url("media/background4.png");
+  }
+  .prob4{
+    background-image: url("media/background5.png");
+  }
+  .prob5{
+    background-image: url("media/background6.png");
+  }
+  .prob6{
+    background-image: url("media/background7.png");
+  }
+
+
+  
+  @media(max-width : 991px){
+    
+    .paragraph,
+    ul
+    {
+      width: 62% !important;
+      font-size: 16px !important;
+      line-height: 2;
+    }
+    .prob_name,
+    .main p {
+      font-size: 40px;
+    }
+    .prob,
+    .problems
+    {
+      /* margin-top: 50px; */
+      height: 66vh;
+    }
+  }
+  @media(max-width : 800px){
+    .prob,
+    .problems{
+      background-image: none ;
+      height: fit-content;
+      margin-bottom: 150px;
+    }
+    .paragraph,
+    ul
+    {
+      width: 80% !important;
+      font-size: 16px
+    }
+    .paragraph,
+    .prob_name
+    {
+      margin: 50px auto;
+      width: 80%;
+    }
+  }
+  
+  
+  .solutions{
+    height: 100%;
+    margin-bottom: 100px;
+  }
+  .solutions span{
+    font-weight: 600;
+  }
+  .solutions ul{
+    width: 80%;
+    /* margin: auto; */
+  }
+  .solutions li{
+    margin-bottom: 15px;
+  }
+
+  .footer
+  {
+    background-color: #012c3d;
+    padding: 10px;
+    color: #f3f7fc !important;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    font-weight: 400;
+    /* margin: auto; */
+  }
+  .footer>p:nth-child(1){
+    text-align: center;
+  }
+  .footer>p:nth-child(3){
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .footer ul{
+    list-style: circle;
+  }
+  .footer span{
+    font-weight: 600;
+  }
+  
+  
