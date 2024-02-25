@@ -7,3 +7,6 @@ window.onscroll = function() {
     else 
         span.classList.remove("show");
 }
+
+let year = document.querySelector(".year");
+year.innerHTML = new Date().getFullYear();
